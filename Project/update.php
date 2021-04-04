@@ -40,6 +40,7 @@ if($imageTemp !=""){
 <body>
 
    <?php
+  //  affichage les informations 'input' ////////////////
 
   if(isset($_GET['update_id'])): ?>
   <?php $id = $_GET['update_id']; ?>
@@ -47,7 +48,7 @@ if($imageTemp !=""){
   $r = mysqli_fetch_array($query);
   $name = $r['Name_product'];
   $price = $r['Price'];
-  // $nomphoto=$r['Image'];
+  
   
    ?>
    <div class="updatebacgh">

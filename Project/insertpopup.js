@@ -36,5 +36,5 @@ function confirmer(delid){
       return true ;
   }
 }
-////////////////////////////////////////////////// responsive nav
+
 

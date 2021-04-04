@@ -11,7 +11,6 @@ html{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 2fr 1.8fr 1.4fr 0.9fr;
-    // gap: 30px;
     background-color: #F9F9F9;
                                                                 @media screen and (max-width:670px) {
                                                                  display: block;
@@ -22,23 +21,23 @@ html{
     &__bacghround{
           background-image: url(/Project/images/Essential-Guide.png);
           background-size:cover;
-        //   background-repeat: no-repeat;
           background-position: center;
-        //   height: 400px;
+        
      .left{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // width: 47%;
         height: 484px;
-        // background-color: rgb(2 2 2 / 66%);
-        // border-radius: 50%;
         background-color:  rgba(2, 1, 1, 0.3);
-        // background-color: rgb(8 3 3 / 39%);
+    
        
                 
          .title{
              text-align: center;
+             a{
+                 text-decoration: none;
+                 color: black;
+             }
          }
          
           h1{
@@ -92,8 +91,6 @@ html{
                              }                   
         
         .your{
-            // background-color: rgba(148, 16, 16, 0.23);
-            // background-color: #F9F9F9;
             grid-area: 1/1/1/4;
             display: flex;
             justify-content: center;
@@ -106,7 +103,6 @@ html{
                                }  
 
             .title{
-                // background-color: white;
                 background-color:  rgba(2, 1, 1, 0.27);
                 box-shadow: 2px 2px 13px #2d2121;
                  width: 60%;
@@ -132,7 +128,7 @@ html{
         }
 
         .food{
-            // background-color: yellowgreen;
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -150,7 +146,7 @@ html{
  
                               }  
                               @media screen and (max-width:380px) {
-                                      width: 74%; 
+                                      width: 84%; 
                             
                              } 
 
@@ -208,8 +204,7 @@ html{
 
                                                        } 
         .your{
-            // background-color: rgba(148, 16, 16, 0.23);;
-            // background-color: #4b3c3c;
+        
             grid-area: 1/1/1/4;
             display: flex;
             justify-content: center;
@@ -225,7 +220,7 @@ html{
 
                                                  } 
             .title{
-                // background-color: white;
+    
                 background-color:  rgba(2, 1, 1, 0.27);
                 box-shadow: 2px 2px 13px #2d2121;
                  width: 60%;
@@ -248,8 +243,7 @@ html{
             }
         }
         .food{
-            // background-color: yellowgreen;
-            // background-color:  rgba(2, 1, 1, 0.27);
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -259,13 +253,13 @@ html{
                 text-align: center;
                 border-radius: 10px;
                                          @media screen and (max-width:670px) {
-                                       // background-color: rgba(123, 72, 35, 0.53);
+                                       
                                         width: 39%;
                                         text-align: center;
                                         border-radius: 17px;  
           } 
           @media screen and (max-width:380px) {
-            width: 74%;
+            width: 84%;
             
         
          } 
@@ -300,7 +294,10 @@ html{
         }
     }
     &__about{
-        background-color: #F9F9F9;
+        // background-color: #F9F9F9;
+          background-image: url(/Project/images/fallingfood-bg.jpg);
+         background-position: center;
+         background-size: cover;
         display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr;
        grid-template-rows: 0.6fr 1fr;
@@ -310,6 +307,7 @@ html{
     "chef1 chef2 chef3 chef4";
                                      @media screen and (max-width:670px) {
                                         background-color: #F9F9F9;
+                                        background-image: none;
                                         display: grid;
                                         grid-template-columns: 1fr ;
                                         grid-template-rows: 0.6fr 1fr;
@@ -350,20 +348,20 @@ html{
         justify-content: center;
     }
     .chef{
-        background-color:  rgba(2, 1, 1, 0.27);
+        background-color:  rgba(2, 1, 1, 0.6);
         width: 90%;
         text-align: center;
         height: 80%;
                                              @media screen and (max-width:670px) {
                                             
-                                                background-color: rgba(2, 1, 1, 0.27);
+                                            
                                                 width: 50%;
                                                 text-align: center;
                                                 height: 80%;
 
                                             } 
                                             @media screen and (max-width:380px) {
-                                                width: 70%;
+                                                width: 84%;
                                                 height: auto;
                                                 
                                             
@@ -375,13 +373,18 @@ html{
         }
         h3{
             margin-bottom: 5px;
+            color: white;
+        }
+        p{
+            color: white;
         }
     }
     .chef:hover{
         transform: scale(1.2);
                     transition: transform 0.7s;
                     box-shadow: 2px 2px 13px #0a0441;
-        background-color: white;
+                    
+                
         
     }
 
@@ -445,8 +448,6 @@ html{
         .messag1{
             display: flex;
             justify-content: space-around;
-            // background-color: aquamarine;
-            // background-color:  rgba(2, 1, 1, 0.27);
             background-color: #f9f9f938;
              width: 70%;
              height: 80%;
@@ -534,10 +535,7 @@ html{
           }
 
           .logoftr { grid-area: logoftr;
-            // background-color: blue;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
+
             text-align: center;
             margin-top: 70px;
             @media screen and (max-width:670px) {
@@ -547,7 +545,6 @@ html{
     
               }
             .logofood{
-                // background-color: cornsilk;
                 width: 70%;
                 @media screen and (max-width:670px) {
                   width: 50%;
@@ -562,10 +559,7 @@ html{
             }
          }
           .contactus { grid-area: contactus; 
-            // background-color: brown;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
+            
              margin-top: 84px;
              @media screen and (max-width:670px) {
                 display: flex;
@@ -574,12 +568,12 @@ html{
      
                }
             .logofood{
-                // background-color: cornsilk;
+        
                 width: 70%;
                 text-align: center;
                 .pin{
                     margin-bottom: 10px;
-                    // justify-content: space-evenly;
+            
                     img{
                         width: 20px;
                         height: 20px;
@@ -591,10 +585,7 @@ html{
             }
         }
           .opning { grid-area: opning; 
-            // background-color: cadetblue;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
+        
             margin-top: 84px;
             text-align: center;
             @media screen and (max-width:670px) {
@@ -604,7 +595,7 @@ html{
      
                }
             .logofood{
-                // background-color: cornsilk;
+        
                 width: 70%;
                 h2{
                     margin-bottom: 18px;
@@ -616,7 +607,7 @@ html{
         }
            .footer2 { grid-area: footer2;
             background-color: #484848;
-            // background-color: #27b432; 
+    
             display: flex;
             justify-content: space-between;
             align-items: center; 
@@ -649,7 +640,7 @@ html{
                            
 
                             img{
-                                // height: 17px;
+                    
                                 width: 20px;
                                 border-radius: 50%;
                                 border: 1px solid;
@@ -662,265 +653,7 @@ html{
     }
 }
 
-//     $opacity: opacity 0.5;
-//     .navbar{
-//     height: 100px;
-//     // width: 100%;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     // $color: black;
-//     a{
-//         text-decoration: none;
-//         font-family: sans-serif;
-//     }
-    
-//     #button1{
-//         background-color: orange;
-//         width: 160px;
-//         height: 40px;
-//         margin: 10px;
-//         border: none;
-//         border-radius: 20px;
-//     }
-//     #button1:hover{
-//         background-color: black;
-//         color:orange;
-        
-//     }
-//     &__logo{
-//         img{
-//             width: 160px;
-//             height: 80px;
-//             margin: 10px;
-//         }
-        
-    
-        
-//     }
-    
-//     &__href{
-//         margin-top: 10px;
-        
-        
-//     }
-//     &__nav{
-//         width: 421px ;
-//         display: flex ;
-//         justify-content: space-between ;
-//         align-items: center ;
-//     }
-    
-// }
 
-
-// .background{
-//     background-image: url(/Project/images/restaurant-in-valkenswaard.jpg);
-//     background-repeat: no-repeat;
-    
-//     // height: 200px;
-//     // min-height:70vh;
-//     // width: 100%;
-// .background__dreams{
-//         background: rgba(255, 1255, 255, 0.5);
-//         width: 40%;
-//         height: 100%;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         padding-left: 20px;
         
-//     }
-//     #title{
-//         font-family: sans-serif;
-//     }
-//     #para{
-//         font-size: 10px;
-//         margin-top: 23px;
-//     }
-//     .button2{
-//         width: 180px;
-//         height: 40px;
-//         background-color: orange;
-//         margin-top: 50px;
-//         margin-left: 40px;
-//         border: none;
-//         border-radius: 20px;
-//     }
-// }
 
-// .title-main{
-//     padding-top:100px;
-//     background-color:#F9F9F9;
-
-//     h2{
-        
-//         text-align: center;
-//         font-family: sans-serif;
-//     }
-//      p{
-//         text-align: center;
-//         font-family: sans-serif; 
-    
-//      }   
-//     padding-bottom: 100px;
-//     &__titre{
-//         background-color:#ff5722;
-//         width: 60%;
-//         margin: 0 auto;
-//         height: 200px;
-      
-//     }
-// }
-// .cards{
-//     padding-top: 70px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     background-color: #F9F9F9;
-//     padding-bottom: 70px;
-  
-   
-// }
-// .grid-container {
-//     display: grid;
-//     grid-template-columns: 300px 300px 300px;
-//     grid-template-rows: 400px;
-//     gap: 0px 50px;
-//     grid-template-areas:
-//       "Food1 Food2 Food3";
-//   }
-//   .Food1 {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       align-items: center;
-//       background-color:white;
-//       box-shadow: 0 0 40px 5px #0000003b;
-//       img{
-//           width: 140px;
-//           height: 60px;
-//           margin-bottom: 15px;
-//       }
-//       .border{
-//           background-color: black;
-//           width: 70px;
-//           height: 3px;
-
-//       }
-//       h2{
-//         margin-bottom: 8px;
-//       }
-//       p{
-//         text-align: center;
-//     }
-//        grid-area: Food1;
-//      }
-//   .Food2 { 
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     background-color:white;
-//     box-shadow: 0 0 40px 5px #0000003b;
-//     img{
-//         width: 140px;
-//         height: 60px;
-//     }
-//        p{
-//            text-align: center;
-//        }
-//       grid-area: Food2;
-//      }
-//   .Food3 { 
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     background-color:white;
-//     // box-shadow: 0 0 40px 5px #0000003b;
-
-//     img{
-//         width: 140px;
-//         height: 60px;
-//     }
-//     p{
-//         text-align: center;
-//     }
-//       grid-area: Food3;
-//      }
-
-//      .grid-container1 {
-//         padding: 31px;
-//         display: grid;
-//         grid-template-columns: 1fr 1fr 1fr;
-//         grid-template-rows: auto;
-//         gap: 10px 30px;
-//         grid-template-areas:
-//           "Logo contact-us open";
-//       }
-//       .Logo { 
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         grid-area: Logo;
-//         padding-left: 30px;
-//            img{
-//             width: 160px;
-//             height: 80px;
-//           }
-//          }
-//       .contact-us {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//           img{
-//               width: 20px;
-//               height: 20px;
-//           }
-//            grid-area: contact-us; 
-//         }
-//       .open {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         grid-area: open; 
-//         }     
-//        h5{
-//         margin: 6px;
-//         }
-//       .pin{
-//         display: flex;
-//         margin-top: 10px;
-//         }
-// .Food1:hover{
-//     transform: scale(1.2);
-//     transition: transform 0.7s;
-// }
-// .Food2:hover{
-//     transform: scale(1.2);
-//     transition: transform 0.7s;
-// }
-// .Food3:hover{
-//     transform: scale(1.2);
-//     transition: transform 0.7s;
-//     box-shadow: 0 0 40px 5px #0000003b;
-// }
-// .footer2{
-//     background-color: #F9F9F9;
-//     height: 44px;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     &__follow{
-//         display: flex;
-//         justify-content: space-around;
-       
-//         img{
-//             height: 20px;
-//             width: 20px;
-//             text-align: center;
-//         }
-//     }
-// }
  

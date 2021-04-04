@@ -67,7 +67,7 @@
 <input  id="inputsubmit"   type="submit" value="LOGIN" name="save">
 
 </form>
-                
+                      <!-- //////confirmatin login ////////////-->
                 
                 
                 <?php 
@@ -107,61 +107,7 @@
 </div> 
 
 </section>
-<!-- <section class= "container__footer">
-   <div class="logoftr">
-       <div class="logofood">
-   <img src="images/YY FOOD_free-file (2).png" alt="" >
-   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Perferendis voluptate fugit</p>
-   </div> 
-</div>
-  <div class="contactus">
-      <div class="logofood">
-      <h2>Contact us</h2>
-                    <div class="pin">
-                      <img src="images/pinpin.png" alt="" >
-                      <p>Lorem ipsum dolor, sit amet </p>
-                    </div>
-                    <div class="pin">
-                      <img src="images/emaill.png" alt="">
-                      <p>Lorem ipsum dolor, sit amet </p>
-                     </div>
-                    <div class="pin">
-                      <img src="images/calll.png" alt="" >
-                      <p>+2127563423 // +212512436567</p>
-                    </div>
-         
-      </div>
-                  
 
-  </div>
-  <div class="opning">
-   <div class="logofood">
-           <h2>Openinig Now</h2>
-           <p>AAAA.......................................AAAAA</p>
-           <p>AAAA.......................................AAAAA</p>
-           <p>AAAA.......................................AAAAA</p>
-           <p>AAAA.......................................AAAAA</p>
-           <p>AAAA.......................................AAAAA</p>
-       
-   </div>
-  </div>
-  <div class="footer2">
-  <div class="copyright">
-            <P>Copyright ©2021 </P>
-        </div>
-             <div class="follow">
-                 <p>Follow Us</p>
-                 <img src="images/facebook (1).svg" alt="" width="20px">
-                 <img src="images/g (1).svg" alt="" width="20px">
-                <img src="images/instagram (2).svg" alt="" width="20px">
-                <img src="images/twitter (1).svg" alt="" width="20px">
-             </div>
-             
-  </div>
-       
-       
-   </section> -->
 
    <script src="toggle.js"></script> 
 </body>

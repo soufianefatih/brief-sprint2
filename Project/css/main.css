@@ -73,14 +73,14 @@
         font-size: 17px;
         border-bottom: 1px solid;
         width: 100%;
-        /* text-align: center; */
         height: 50px;
         display: flex;
         justify-content: center;
         align-items: center; } }
 
 .active-toggle {
-  left: 0; }
+  left: 0;
+  transition: 0.6s; }
 
 .form {
   background-image: url(/Project/images/960x0.jpg);
@@ -267,7 +267,6 @@
           background-color: white;
           border: none;
           padding: 4px;
-          /* color: #070707; */
           border-radius: 10px;
           cursor: pointer; }
         .dachbourd__tableau #customers td a {
@@ -277,7 +276,6 @@
           background-color: black;
           border: none;
           padding: 5px;
-          /* color: #070707; */
           border-radius: 10px;
           cursor: pointer;
           color: white; }
@@ -292,7 +290,6 @@
       background-color: white;
       border: none;
       padding: 4px;
-      /* color: #070707; */
       border-radius: 8px; }
   .dachbourd__count {
     grid-area: caount;
@@ -311,8 +308,6 @@
         width: 12%; }
 
 .updatebacgh {
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 538px; }
   .updatebacgh h1 {
     text-align: center;
@@ -387,6 +382,9 @@
   align-items: center;
   width: 240px;
   height: 300px; }
+  .order__ordermenu__ordermenu:hover {
+    transform: scale(1.2);
+    transition: transform 0.7s; }
   .order__ordermenu p {
     margin-bottom: 7px; }
   .order__ordermenu img {
@@ -430,6 +428,9 @@ html {
       background-color: rgba(2, 1, 1, 0.3); }
       .container__bacghround .left .title {
         text-align: center; }
+        .container__bacghround .left .title a {
+          text-decoration: none;
+          color: black; }
       .container__bacghround .left h1 {
         font-size: 44px;
         color: white; }
@@ -509,7 +510,7 @@ html {
             width: 39%; } }
         @media screen and (max-width: 380px) {
           .container__foodlunch .food .lunch {
-            width: 74%; } }
+            width: 84%; } }
         .container__foodlunch .food .lunch img {
           width: 85px;
           margin-bottom: 20px;
@@ -586,7 +587,7 @@ html {
             border-radius: 17px; } }
         @media screen and (max-width: 380px) {
           .container__bestservice .food .best {
-            width: 74%; } }
+            width: 84%; } }
         .container__bestservice .food .best img {
           width: 100%;
           height: 160px;
@@ -610,7 +611,9 @@ html {
         transition: transform 0.7s;
         box-shadow: 2px 2px 13px #0a0441; }
   .container__about {
-    background-color: #F9F9F9;
+    background-image: url(/Project/images/fallingfood-bg.jpg);
+    background-position: center;
+    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.6fr 1fr;
@@ -620,6 +623,7 @@ html {
     @media screen and (max-width: 670px) {
       .container__about {
         background-color: #F9F9F9;
+        background-image: none;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.6fr 1fr;
@@ -650,31 +654,32 @@ html {
       display: flex;
       justify-content: center; }
     .container__about .chef {
-      background-color: rgba(2, 1, 1, 0.27);
+      background-color: rgba(2, 1, 1, 0.6);
       width: 90%;
       text-align: center;
       height: 80%; }
       @media screen and (max-width: 670px) {
         .container__about .chef {
-          background-color: rgba(2, 1, 1, 0.27);
           width: 50%;
           text-align: center;
           height: 80%; } }
       @media screen and (max-width: 380px) {
         .container__about .chef {
-          width: 70%;
+          width: 84%;
           height: auto; } }
       .container__about .chef img {
         width: 100%;
         height: 70%;
         margin-bottom: 8px; }
       .container__about .chef h3 {
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        color: white; }
+      .container__about .chef p {
+        color: white; }
     .container__about .chef:hover {
       transform: scale(1.2);
       transition: transform 0.7s;
-      box-shadow: 2px 2px 13px #0a0441;
-      background-color: white; }
+      box-shadow: 2px 2px 13px #0a0441; }
   .container__contactnous {
     background-image: url(/Project/images/unnamed.jpg);
     background-repeat: no-repeat;

@@ -1,5 +1,8 @@
 <?php
 include "connect.php";
+
+
+/////////////////////////////////add product////////////////
 if(isset($_POST['save'])){
  $name     = $_POST['name'];
  $price    = $_POST['price'];
@@ -10,24 +13,20 @@ if(isset($_POST['save'])){
 
  
  $Query = mysqli_query($con, "INSERT INTO product (Name_product,Price,Image) VALUES ('$name','$price','$nomphoto')");
-//  if($Query){
-//   echo "<script>alert(' record is successfully inserted!')</script>";
-//  }else{
-//   echo "<script>alert('Sorry an error occured!')</script>";
-//  }
+
 
 }
 
 
 ?>
-    <!-- count nbr producr -->
+    <!--/////////////// count nbr producr //////////////////-->
 <?php
 $reqcount="SELECT count(*) nbproduct from product";
 $resultatCount=$con->query($reqcount);
 $affiche=mysqli_fetch_array($resultatCount);
 
 ?>
-<!-- count nbr admin-->
+<!-- ////////////////count nbr admin/////////////////-->
 <?php
 $reqcount1="SELECT count(*) nbpradmin from admin";
 $resultatCount1=$con->query($reqcount1);
@@ -52,6 +51,9 @@ $affiche1=mysqli_fetch_array($resultatCount1);
  <div class="dachbourd__adminuser">
      <div class="dachbourd__adminuser__logoadminuser">
      <img src="images/man-300x300.png" alt="">
+   
+
+     <!-- ///////////session////////////////// -->
   
      <?php
     session_start();
@@ -93,7 +95,7 @@ $affiche1=mysqli_fetch_array($resultatCount1);
  <div class="dachbourd__count">
 
  <div class="countproduct">
-         
+         <!-- affichage nombre product -->
      
       <h3>Product</h3>
       <h4><?php echo "Nbr= ".$affiche['nbproduct'] ?></h4>
@@ -102,7 +104,8 @@ $affiche1=mysqli_fetch_array($resultatCount1);
   </div>
   <div class="countproduct">
          
- 
+          <!-- affichage nombre admin -->
+
       <h3> admin</h3>
       <h4><?php echo "Nbr= ".$affiche1['nbpradmin'] ?></h4>
            
@@ -115,6 +118,7 @@ $affiche1=mysqli_fetch_array($resultatCount1);
 
 
   <div class="dachbourd__tableau">
+      <!-- /////////form add //////////////// -->
   <div class="popapp"    id="myModal" >
    <span class="close"></span>
 
@@ -159,7 +163,7 @@ $affiche1=mysqli_fetch_array($resultatCount1);
  </thead>
  <tbody>
   <?php
- 
+//  affichage tableau//////////////////////////
 $Show = mysqli_query($con, "SELECT * FROM product");
 while($r = mysqli_fetch_array($Show)): ?>
     <tr>

@@ -12,7 +12,7 @@ include 'connect.php';
 
 
 
-// include "connect.php";
+
 $select="DElETE FROM product where Code='".$_GET['del_id']."'";
 $query = mysqli_query($con, $select);
 header("Location:Dachbourd.php");

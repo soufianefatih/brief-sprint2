@@ -170,7 +170,7 @@ if(!isset($_SESSION['User']))
   <script>
    var i = 0; 			// Start Point
 var images = [];	// Images Array
-var time = 4000;	// Time Between Switch
+var time = 3000;	// Time Between Switch
 	 
 // Image List
 images[0] = "images/slide1.jpg";

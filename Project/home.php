@@ -41,13 +41,9 @@
             <div class="navbar__admin">
                 <button id="button1"><a id="abutton" href="Dachbourd.php">Dashboard</a></button>
             </div>
-           
-           
-               
-
-
-       
         <?php } ?>
+
+        
         <?php if(!isset($_SESSION["User"]))  { ?>
             <div class="navbar__admin">
                 <button id="button1"><a id="abutton" href="login.php">login</a></button>
@@ -86,7 +82,7 @@
           <p>Lorem ipsum dolor sit amet  
     
           </p>
-          <button id="but">Our menu</button>
+          <button id="but"> <a href="menu.php">Our menu</a>  </button>
    </div>  
     </div>
        
@@ -94,8 +90,8 @@
    <section class= "container__foodlunch">
        <div class="your">
            <div class="title"> 
-           <h2>Lorem ipsum dolor sit  amet consectetur  <br>
-           sit  amet 
+           <h2>Lorem ipsum dolor sit lorem
+        
            </h2>
             
            </div>  
@@ -133,9 +129,8 @@
    <section class= "container__bestservice">
    <div class="your">
    <div class="title"> 
-   <h2>Lorem ipsum dolor sit  amet consectetur  <br>
-           sit  amet 
-           </h2>>
+   <h2>Lorem ipsum dolor sit  lorem
+           </h2>
             
            </div> 
        </div>
@@ -303,178 +298,9 @@
        
        
    </section>
-   <!-- <script>
-   var i = 0; 			// Start Point
-var images = [];	// Images Array
-var time = 3000;	// Time Between Switch
-	 
-// Image List
-images[0] = "images/Essential-Guide.png";
-images[1] = "images/healthy-foods.jpg";
-images[2] = "images/healthy-eating.jpg";
-images[3] = "images/restaurant-in-valkenswaard.jpg";
-
-// Change Image
-function changeImg(){
-	document.slide.src = images[i];
-
-	// Check If Index Is Under Max
-	if(i <script images.length - 1){
-	  // Add 1 to Index
-	  i++; 
-	} else { 
-		// Reset Back To O
-		i = 0;
-	}
-
-	// Run function every x seconds
-	setTimeout("changeImg()", time);
-}
-
-// Run function when page loads
-window.onload=changeImg;
    
-   </script> -->
      </main>
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   <!-- <div class="background">
-            <div class="background__dreams">
-                <h1 id="title">Your Dreams 
-                    <br>
-                               Foods in our shop
-                </h1>
-                <P id="para">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</P>
-                <button class="button2">Order Now</button>
-            </div>
-        </div> -->
-        
-
-  <!-- <main>
-      <div class="title-main"> 
-        <div class="title-main__titre">
-        <h2>Your Dreams Foods in our shop</h2>
-     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, ex.</p>
-     <p>Lorem ipsum, dolor sit amet consectetur .</p>
-    </div> 
-    </div>
-    <div class="cards"><div class="grid-container">
-        <div class="Food1">
-           <img src="images/lunch.png" alt="">
-           <div class="border"></div>
-           <h2>Food</h2>
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Perferendis voluptate fugit quae distinctio placeat 
-                labore cum soluta dolorum architecto natus quaerat totam
-                perspiciatis veniam mollitia exercitationem adipisci reiciendis
-                necessitatibus officiis, odit aliquam.
-                Recusandae placeat ipsam vero consequatur, reiciendis sunt?</p>
-        </div>
-        <div class="Food2">
-            <img src="images/soup.png" alt="">
-            <h2>Food</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Perferendis voluptate fugit quae distinctio placeat 
-                 labore cum soluta dolorum architecto natus quaerat totam
-                 perspiciatis veniam mollitia exercitationem adipisci reiciendis
-                 necessitatibus officiis, odit aliquam.
-                 Recusandae placeat ipsam vero consequatur, reiciendis sunt?</p>
-        </div>
-        <div class="Food3">
-            <img src="images/tray.png" alt="">
-            <h2>Food</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Perferendis voluptate fugit quae distinctio placeat 
-                 labore cum soluta dolorum architecto natus quaerat totam
-                 perspiciatis veniam mollitia exercitationem adipisci reiciendis
-                 necessitatibus officiis, odit aliquam.
-                 Recusandae placeat ipsam vero consequatur, reiciendis sunt?</p>
-        </div>
-      </div></div>
-    
-    </main>
-    <footer>
-        <div class="footer1">
-           <div class="grid-container1">
-                  <div class="Logo">
-                    <img src="images/YY FOOD_free-file (2).png" alt="">
-                    <h5>Lorem ipsum dolor sit amet consectetur
-                    <h5>Lorem ipsum dolor sit amet consectetur  
-                    </h5>
-                    <h5>Lorem ipsum dolor sit amet consectetur 
-                    </h5>
-                  </div>
-            <div class="contact-us">
-                <H1>Contact us</H1>
-                    <div class="pin">
-                      <img src="images/pin.png" alt="">
-                      <p>ttttttttttttttttttttt</p>
-                    </div>
-                    <div class="pin">
-                      <img src="images/pin.png" alt="">
-                      <p>ttttttttttttttttttttt</p>
-                     </div>
-                    <div class="pin">
-                      <img src="images/pin.png" alt="">
-                      <p>ttttttttttttttttttttt</p>
-                    </div>
-            </div>
-            <div class="open">
-                <H1>Openinig Now</H1>
-            </div>
-          </div>
-        </div>
-        <div class="footer2">
-             <div class="copyright">
-            <P>Copyright ©2021 </P>
-        </div>
-             <div class="footer2__follow">
-                 <p>Follow Us</p>
-                 <img src="images/facebook (2).png" alt="">
-                 <img src="images/g.png" alt="">
-                <img src="images/instagram (1).png" alt="">
-                <img src="images/twitter.png" alt="">
-             </div>
-        </div>
-        
-    </footer> -->
-    <!-- <div class="chef1">
-      <div class="chef">
-  <img src="images/CHEF 2-01.jpg" alt="" >
-  <h3>chef</h3>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
- </div>
-  </div>
-  <div class="chef2">
-  <div class="chef">
-  <img src="images/Chef Cooking.jpg" alt="" >
-  <h3>chef</h3>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
- </div>
-  </div>
-  <div class="chef3">
-  <div class="chef">
-  <img src="images/Chef Illustration.jpg" alt="" >
-  <h3>chef</h3>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
- </div>
-</div>
-  <div class="chef4">
-  <div class="chef">
-  <img src="images/Cooking Chef.jpg" alt="" >
-  <h3>chef</h3>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
- </div>
-  </div> -->
 
 
    <script src="toggle.js"></script> 
@@ -483,17 +309,3 @@ window.onload=changeImg;
 </html>
 
 
-<!-- <div class="titre"></div>
-  <div class="message1">
-      <div class="message">
-      <input type="text" class="fille" placeholder="Your Name">
-      <input type="texte" class="fille" placeholder="Your Email">
-      <input type="texte" class="fille" placeholder="Your Phone">
-      </div>
-  </div>
-  <div class="message2">
-  <div class="message">
-  <textarea class="fill" placeholder="Message"></textarea>
-  <button class="bouttonb">send</button>
-  </div>
-  </div> -->
